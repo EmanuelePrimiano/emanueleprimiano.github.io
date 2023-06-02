@@ -1,0 +1,7 @@
+- Bio di descrizione
+- Foto e immagini
+- Link profili social / lavori / GitHub
+- Hard Skill
+- contatti (form, emailJS, attributi "required") <non l'email diretta>
+- tag "Open Graph"
+- menu sticky fruibile da mobile e desktop
