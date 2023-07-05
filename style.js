@@ -1,15 +1,26 @@
-function myFunction() {
-    document.getElementById("option").classList.toggle("show");}
+// script.js
+function SendMail() {
+  var params = {
+    from_name : document.getElementById("fullName").value,
+    email_id : document.getElementById("email_id").value,
+    message : document.getElementById("message").value
+  }
+  emailjs.send("service_gkw1sva","template_8e7tewd", params).then(function(res) {
+    alert("Success!" + res.status);
+  })
+}
 
-window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
+function myFunction() {
+  var x = document.getElementById("option");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  var x = document.getElementById("ab","ms","mw","so");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } 
+
+}

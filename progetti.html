@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" property="og:title" content="Sono Emanuele, junior Ux/Ui Designer molisano">
+    <meta name="description" content="Sono Emanuele, junior Ux/Ui Designer molisano">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script src="style.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('F4D2ZLHTd_DgyAOWj')</script>
+    <title>Emanuele Primiano - Progetti</title>
+</head>
+
+<body>
+    <nav class="menu_bar" id="menu_progetti">
+        <div class="menu">
+            <a href="/portfolio.html"><img src="img/profile.png" alt="menu_profile"></a>
+            <a href="/portfolio.html"><h3 id="nome">Emanuele Primiano</h3></a>
+        </div>
+        <div class="menu_1" id="nav_desktop">
+            <a href="/portfolio.html">Home</a>
+            <a href="#prj_1">Progetti</a>
+            <a href="#social">Contatti</a>
+        </div>       
+        <div class="menu_1" id="nav_mobile">
+            <a href="javascript:void(0);" onclick="myFunction()"><h3><img class="dropbtn" src="img/menu.png" alt="menu"></h3></a>
+            <div id="option" class="dropdown-content">
+                    <a href="portfolio.html" onclick="myFunction()" id="ab">Home</a>
+                    <a href="#prj_1" onclick="myFunction()" id="ms">Progetti</a>
+                    <a href="#social" onclick="myFunction()" id="so">Contatti</a>
+        </div>
+    </nav>
+
+    <section id="progetti_page2">
+        <h1>I miei progetti</h1>
+        <div class="contenuto" id="prj_1">
+                <div class="img_prj">
+                    <img src="img/progetto1.jpg" alt="blog">
+                </div>
+                <div class="descrizione">
+                    <h2>I vantaggi del second-hand</h2>
+                    <p>Ho scritto un articolo sul tema dell'usato ed alcuni vantaggi 
+                        che nel perseguire questa strada. Mi sono focalizzato molto sui benefici
+                        che può portare non solo dal punto di vista ambientale, ma anche personale.
+                    </p>
+                    <a href="/Progetto Copywriting di Emanuele Primiano.pdf"><button class="btn_2">scarica il progetto</button></a>
+                </div>
+        </div>
+        <div class="contenuto" id="prj_2">
+            <div class="img_prj">
+                <img src="img/progetto3.png" alt="grafica per IncluDo">
+            </div>
+            <div class="descrizione">
+                <h2>Grafica per IncluDo</h2>
+                <p>Il progetto riguarda un ente di formazione per giovani. 
+                    Sono stati creati logo, icone e grafiche social.
+                    Parte fondamentale del lavoro è dare un'identità precisa ad IncluDo
+
+                </p>
+                <a href="/Progetto Grafica UX UI di Emanuele Primiano.pdf"><button class="btn_2">scarica il progetto</button></a>
+            </div>
+        </div>
+        <div class="contenuto" id="prj_3">
+            <div class="img_prj">
+                <img src="img/progetto2.jpg" alt="grafica per IncluDo">
+            </div>
+            <div class="descrizione">
+                <h2>Wireframe e Prototipo per Ecodream</h2>
+                <p>Lo scopo del progetto è valutare le criticità presenti nell'attuale sito
+                    di un'azienda di accessori di moda ecosostenibili. La prima fase ha riguardato
+                    la creazione del wireframe per poi passare alla fase del prototipo.
+                </p>
+                <div>
+                <a href="/Progetto Wireframing di Emanuele Primiano per Start2Impact.pdf"><button class="btn_2">scarica il progetto 1</button></a>
+                <a href="/Progetto User Interface di Emanuele Primiano.pdf"><button class="btn_2">scarica il progetto 2</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenuto">
+            <div id="form">
+                <h3>Per ulteriori info potete contattarmi tramite il seguente form:</h3>
+                <input type="text" id="fullName" placeholder="nome" required>
+                <input type="email" id="email_id" placeholder="@email" required>
+                <textarea id="message" placeholder="messaggio" required></textarea>
+                <button onclick="SendMail()"class="btn_1">INVIA</button>
+            </div>
+            <div id="social">
+                <a class="collegamento" href="https://github.com/EmanuelePrimiano">
+                    <img src="img/github-logo.png" alt="Git-Hub">
+                    <h2>Git Hub</h2>
+                </a>
+                <a class="collegamento" href="https://www.facebook.com/emanuele.primiano/?locale=it_IT">
+                    <img src="img/facebook.png" alt="facebook">
+                    <h2>facebook</h2>
+                </a>
+                <a class="collegamento" href="www.linkedin.com/in/emanuele-primiano-b01aa8175">
+                    <img src="img/linkedin.png" alt="linkedIn">
+                    <h2>linkedIn</h2>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>

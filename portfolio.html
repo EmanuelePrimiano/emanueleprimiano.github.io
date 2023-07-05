@@ -8,133 +8,145 @@
     <meta name="description" content="Mi chiamo Emanuele e sono un Junior UX/UI designer. Sto studiando questo settore grazie a Start2Impact">
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <title>Emanuele Primiano</title>
+    <script src="style.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('F4D2ZLHTd_DgyAOWj')</script>
 </head>
 
 <body>
-    <nav id="menu_bar">
+    <nav class="menu_bar">
         <div class="menu">
             <img src="img/profile.png" alt="menu_profile">
-            <h3 id="nome">Emanuele Primiano</h3>
+            <a href="/portfolio.html"><h3 id="nome">Emanuele Primiano</h3></a>
         </div>
         <div class="menu_1" id="nav_desktop">
             <a href="#aboutme">About Me</a>
-            <a href="#skill">Competenze</a>
+            <a href="#myskills">Competenze</a>
             <a href="#myworks">Progetti</a>
-            <a href="#contatti">Contatti</a>
+            <a href="#social">Contatti</a>
         </div>       
         <div class="menu_1" id="nav_mobile">
-            <h3><img onclick="myFunction()" class="dropbtn" src="img/menu.png" alt="menu"></h3>
+            <a href="javascript:void(0);" onclick="myFunction()"><h3><img class="dropbtn" src="img/menu-1.png" alt="menu"></h3></a>
             <div id="option" class="dropdown-content">
-                    <a href="#aboutme">About Me</a>
-                    <a href="#skill">Competenze</a>
-                    <a href="#myworks">Progetti</a>
-                    <a href="#contatti">Contatti</a>
+                    <a href="#aboutme" onclick="myFunction()" id="ab">About Me</a>
+                    <a href="#myskills" onclick="myFunction()" id="ms">Skills</a>
+                    <a href="#myworks" onclick="myFunction()" id="mw">Progetti</a>
+                    <a href="#social" onclick="myFunction()" id="so">Contatti</a>
         </div>
     </nav>
 
     <section id="intro">
         <div class="contenuto">
-                <div id="img_small" >
-                    <img src="img/photo2-bg.png" alt="immagine_profilo">
-                </div>
-                <div id="saluto">
-                    <div id="ciao">
-                        <h1>Ciao, sono<h1 id="name">Emanuele</h1></h1>
-                        <hr/>
-                        <h2>Junior UX/UI designer</h2>
-                    </div>
-                    <div class="intro_buttons">
-                        <a class="button_1" href="#progetti">progetti</a>
-                        <a class="button_2" href="#contatti">contatti</a>
-                    </div>
-                </div>
-            <div id="img_big">
-                <img src="img/photo2-bg.png" alt="immagine">
+            <h1>Ciao!<br/>Io sono Emanuele</h1>
+            <h2>Junior ux/ui Designer</h2>
+            <a href="#myworks"><button class="btn_1">PORTOFOLIO</button></a>
+        </div>
+    </section>
+
+    <section id="img_profile">
+        <img src="img/profile.png" alt="logo">
+    </section>
+
+    <section id="aboutme">
+        <div class="contenuto">
+            <div id="biotxt">
+                <h1>About Me</h1>
+                <p>Sono Emanuele, studente di ux e ui design.
+                    Provengo una piccola regione: il Molise
+                    Sono legato alle tematiche ambientali e alla formazione.
+                    Questi due temi sono il fulcro dei progetti scelti nel 
+                    corso del mio percorso su Start2Impact</p>
+            </div>
+            <div id="bioimg">
+                <img src="img/photo2-bg.png" alt="immagine_profilo">
+            </div>
+            
+        </div>
+    </section>
+   
+    <section id="myskills">
+        <div class="contenuto">
+            <div class="skl">
+                <img src="img/html.png" alt="html">
+                <p>html</p>
+            </div>
+            <div class="skl">
+                <img src="img/css-3.png" alt="css">
+                <p>css</p>
+            </div>
+            <div class="skl">
+                <img src="img/copywriting.png" alt="copywriting">
+                <p>copywriting</p>
+            </div>
+            <div class="skl">
+                <img src="img/graphic-designer.png" alt="grafica">
+                <p>grafica</p>
+            </div>
+            <div class="skl">
+                <img src="img/wireframe.png" alt="wireframing">
+                <p>wireframing</p>
+            </div>
+            <div class="skl">
+                <img src="img/prototyping.png" alt="prototyping">
+                <p>prototyping</p>
             </div>
         </div>
     </section>
 
-    <section id="bio">
+    <section id="myworks">
         <div class="contenuto">
-            <div id="img_bio">
-                <img src="img/profile.png" alt="immagine_bio">
+            <div>
+                <h1>Progetti</h1>
             </div>
-            <div id="text_bio">
-                <div id="h1_bio">
-                    <h1>About Me</h1>
-                </div>
-                <div id="p_bio">
-                    <p>parlo un po di me. jahdsahedhsjd sajha sjdnsjah usadjsafjb djsnfdjsahfjsn fjsfj ksfn jfjksdfjd</p>
-                </div>
+            <div id="progetti">
+                <a class="prj" target="_blank" href="Progetto Copywriting di Emanuele Primiano.pdf">
+                    <img src="img/copywriting-1.png" alt="articolo">
+                    <h2>Articolo per blog</h2>
+                    <p>I vantaggi del second-hand: 5 motivi per scegliere l'usato</p>
+                </a>
+                <a class="prj" target="_blank" href="Progetto Grafica UX UI di Emanuele Primiano.pdf">
+                    <img src="img/blog.png" alt="grafica">
+                    <h2>IncluDo</h2>
+                    <p>Creazione di grafica social ed icone per ente di formazione</p>
+                </a>
+                <a class="prj" target="_blank" href="Progetto Wireframing di Emanuele Primiano per Start2Impact.pdf">
+                    <img src="img/sketch.png" alt="blog">
+                    <h2>Ecodream</h2>
+                    <p>Wireframe e Prototipo per un'azienda di accessori di moda eco-friendly</p>
+                </a>
             </div>
         </div>
+        <a href="/progetti.html"><button class="btn_2">leggi di più</button></a>
     </section>
 
-    <section id="my_skills">
+    <footer>
         <div class="contenuto">
-            <div id="content_skill">
-                <div class="skill">
-                    <img src="img/html.png" alt="html">
-                    <p>html</p>
-                </div>
-                <div class="skill">
-                    <img src="img/css-3.png" alt="css">
-                    <p>css</p>
-                </div>    
-                <div class="skill">
-                    <img src="img/graphic-designer.png" alt="graphic-designer">
-                    <p>design</p>
-                </div>
-                <div class="skill">
-                    <img src="img/prototyping.png" alt="prototyping">
-                    <p>prototyping</p>
-                </div>
-                <div class="skill">
-                    <img src="img/wireframe.png" alt="wireframe">
-                    <p>wireframe</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="progetti">
-        <div class="contenuto">
-            <div class="prg" id="blog">
-                <img src="img/progetto1.jpg" alt="articolo_blog">
-                <p>I vantaggi del second-hand: 5 motivi per scegliere l'usato</p>
-                <a class="button_1" href="">leggi</a>
-            </div>
-            <div class="prg" id="">
-                <img src="img/progetto2.jpg" alt="ecodream">
-                <p>I vantaggi del second-hand: 5 motivi per scegliere l'usato</p>
-                <a class="button_1" href="">leggi</a>
-            </div>
-            <div class="prg" id="blog">
-                <img src="img/progetto3.png" alt="includo">
-                <p>I vantaggi del second-hand: 5 motivi per scegliere l'usato</p>
-                <a class="button_1" href="">leggi</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="images">
-        <img src="img/INCLUDO.jpg" alt="Includo">
-        <img src="img/SHOP.png" alt="shop">
-        <img src="img/HOME_eco.png" alt="home">
-    </section>
-
-    <footer id="contatti">
-        <div class="contenuto">
-            <div id="email">
+            <div id="form">
                 <h3>Per ulteriori info potete contattarmi tramite il seguente form:</h3>
-                <h4>Nome:</h4>
-                <input type="text" placeholder="" required>
-                <h4>Indirizzo email:</h4>
-                <input type="email" placeholder=" @email" required>
-                <h4>messaggio:</h4>
-                <textarea placeholder="" required></textarea>
-                <button>INVIA</button>
+                <input type="text" id="fullName" placeholder="nome" required>
+                <input type="email" id="email_id" placeholder="@email" required>
+                <textarea id="message" placeholder="messaggio" required></textarea>
+                <button onclick="SendMail()"class="btn_1">INVIA</button>
+            </div>
+            <div id="social">
+                <a class="collegamento" href="https://github.com/EmanuelePrimiano">
+                    <img src="img/github-logo.png" alt="Git-Hub">
+                    <h2>Git Hub</h2>
+                </a>
+                <a class="collegamento" href="https://www.facebook.com/emanuele.primiano/?locale=it_IT">
+                    <img src="img/facebook.png" alt="facebook">
+                    <h2>facebook</h2>
+                </a>
+                <a class="collegamento" href="www.linkedin.com/in/emanuele-primiano-b01aa8175">
+                    <img src="img/linkedin.png" alt="linkedIn">
+                    <h2>linkedin</h2>
+                </a>
+                </a>
             </div>
         </div>
     </footer>
