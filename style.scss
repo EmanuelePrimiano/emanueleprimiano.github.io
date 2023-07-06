@@ -76,7 +76,6 @@ section, footer{
 
             &:hover{
                 text-decoration: underline;
-            
             }
         }
     }
@@ -148,6 +147,12 @@ section, footer{
                     display: flex;
                     flex-direction: column;
                     padding-top: 10px;
+
+                    div{
+                        .btn_2{
+                            margin: 10px 0px 0px 0px;
+                        }
+                    }
                     }
 
                     .img_prj{
@@ -160,6 +165,15 @@ section, footer{
                         }  
                 }
         }
+    
+    #prj_1, #prj_3{
+        border-left: 2px $primary-color solid;
+    }
+
+    #prj_2{
+        border-right: 2px $primary-color solid;
+    }
+
 }
 
 .menu{

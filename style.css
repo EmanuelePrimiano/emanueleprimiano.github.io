@@ -126,6 +126,9 @@ section, footer {
   flex-direction: column;
   padding-top: 10px;
 }
+#progetti_page2 .contenuto .descrizione div .btn_2 {
+  margin: 10px 0px 0px 0px;
+}
 #progetti_page2 .contenuto .img_prj {
   display: flex;
   width: 100%;
@@ -133,6 +136,12 @@ section, footer {
 #progetti_page2 .contenuto .img_prj img {
   width: 100%;
   border-radius: 5px;
+}
+#progetti_page2 #prj_1, #progetti_page2 #prj_3 {
+  border-left: 2px #476F9A solid;
+}
+#progetti_page2 #prj_2 {
+  border-right: 2px #476F9A solid;
 }
 
 .menu {
