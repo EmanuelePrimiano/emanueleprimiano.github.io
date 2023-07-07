@@ -116,6 +116,10 @@ section, footer {
   display: flex;
   flex-direction: column;
 }
+#progetti_page2 h1 {
+  display: flex;
+  padding: 10px;
+}
 #progetti_page2 .contenuto {
   margin: 20px 0px 20px 0px;
   display: flex;

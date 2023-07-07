@@ -138,6 +138,11 @@ section, footer{
     display: flex;
     flex-direction: column;
 
+        h1{
+            display: flex;
+            padding: 10px;
+        }
+
         .contenuto{
             margin: 20px 0px 20px 0px;
             display: flex;
