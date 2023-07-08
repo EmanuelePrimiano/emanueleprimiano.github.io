@@ -303,9 +303,6 @@ section, footer {
   display: flex;
   flex-direction: column;
 }
-#myworks .contenuto #progetti a h2, #myworks .contenuto #progetti a p {
-  color: #262626;
-}
 #myworks .contenuto #progetti .prj {
   text-decoration: none;
   background-color: #f7ebec;
@@ -313,7 +310,7 @@ section, footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: normal;
+  justify-content: center;
   border: 1px #f7ebec solid;
   border-radius: 5px;
   padding: 20px;
@@ -321,10 +318,8 @@ section, footer {
   width: 240px;
   height: 260px;
 }
-#myworks .contenuto #progetti .prj:hover {
-  transform: scale(1.05);
-  transition-duration: 300ms;
-  border: 1px #476F9A solid;
+#myworks .contenuto #progetti .prj h2, #myworks .contenuto #progetti .prj p {
+  color: #262626;
 }
 #myworks .contenuto #progetti .prj img {
   width: 80px;
