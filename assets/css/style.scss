@@ -20,12 +20,16 @@ h1{
     padding: 50px 0px 10px 0px;
 }
 
-h3{
-    font-weight: 100;
+h2{
+    font-size: 75px;
+    letter-spacing: -0.1em;
+    line-height: 94%;
+    padding: 50px 0px 10px 0px;
 }
 
 p{
     letter-spacing: -0.05em;
+    font-weight: 100;
 }
 
 section, footer{
@@ -46,95 +50,105 @@ section, footer{
 }
 
 .menu_bar{
-    position: absolute;
-    padding: 0px 50px 0px 50px;
-    font-family: poppins, sans-serif;
-    font-weight: 300;
-    width: 100%;
-    z-index: 1;
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 60px;
+    flex-direction: column;
+    position: fixed;
+    background-color: $tertiary-color;
     color: $secondary-color;
+    width: 100%;
 
-    .menu{
-        a{
-            color: $secondary-color;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-    }
+    #logo_menu{
+        padding: 0px 50px 0px 50px;
+        font-family: poppins, sans-serif;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        
+           
+        #menu_profile{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
 
-    #nav_desktop{
-        a{
-            color: $secondary-color;
-            text-decoration: none;
-            padding: 5px;
-            
 
-            &:hover{
-                text-decoration: underline;
+            img{
+                display: flex;
+                height: 30px;
+                border-radius: 50%;
+                border: solid $secondary-color 2px;
+                margin-right: 10px;
             }
-        }
-    }
 
-    #nav_mobile{
-        height: 100%;
-
-            #option{
-                font-family: poppins, sans-serif;
-                background-color: $secondary-color;
-                display: none;
-                position: absolute;
-                width: 200px;
-                height: 900px;
-                top: 50px;
-                right: 0;
-                z-index: 1;
-                transition: 0.5s;
-
-                   
-                    a{
-                        width: 100%;
-                        border: solid $primary-color;
-                        border-width: 0.5px 1px 0.5px 1px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 20px;
-                        text-decoration: none;
-                        color: $primary-color;
-                        font-size: 14px;
-                   
-                        &:hover{
-                            background-color: $quaternary-color;
-                            color: $secondary-color;
-                            }       
-                    }    
+            a{
+                display: flex;
+                color: $secondary-color;
+                text-decoration: none;
             }
+        
+        }
+
     } 
 }
 
-#menu_progetti{
+#option{
+    font-family: poppins, sans-serif;
+    background-color: $secondary-color;
+    display: none;
     position: relative;
+    width: 100%;
+            
+        a{
+            width: 100%;
+            border: solid $tertiary-color;
+            border-width: 0.5px 0px 0.5px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 14px;
+                   
+            &:hover{
+                background-color: $quaternary-color;
+                color: $secondary-color;
+                }       
+        }    
+}
+
+
+#menu_progetti{
+    position: fixed;
     color: $tertiary-color;
     background-color: $secondary-color;
+    border-bottom: 0.5px $primary-color solid;
+   
 
-    .menu_1{
-        a{
+
+    #logo_menu{
+        #menu_profile{
+            
            color: $tertiary-color;   
-        }
-
-    }
-            a{
+        
+           h3{
                 color: $tertiary-color;
                 text-decoration: none;
             }
+        }
+
+    }
+           
 }
 
 #progetti_page2{
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
 
@@ -181,20 +195,6 @@ section, footer{
 
 }
 
-.menu{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-
-    img{
-        display: flex;
-        height: 30px;
-        border-radius: 50%;
-        border: solid $secondary-color 2px;
-        margin-right: 10px;
-    }
-}
 
 .menu_1{
     display: flex;
@@ -247,7 +247,7 @@ section, footer{
 }
 
 #intro{
-    background-image: linear-gradient(to bottom, $tertiary-color 1%, $primary-color);
+    background-image: linear-gradient(to bottom, $tertiary-color 20%, $primary-color);
     color: $secondary-color;
     height: fit-content;
     padding-top: 60px;
@@ -259,7 +259,9 @@ section, footer{
             border-bottom: 2px $secondary-color solid;
         }
 
-        h2{
+        #presentation{
+            border: none;
+            font-size: 30px;
             padding-top: 10px;
             font-family: italiana, sans-serif;
             letter-spacing: 0;
@@ -464,7 +466,7 @@ footer{
                     border: 1px $secondary-color solid;
                 }
 
-                h2{
+                h3{
                     color: $secondary-color;
                     font-weight: 100;
                 }
@@ -477,6 +479,7 @@ footer{
 }
 
 @media only screen and (min-width: 401px){
+
     #progetti_page2{
         .contenuto{   
                 width: 100%;
@@ -497,18 +500,6 @@ footer{
 }
 
 @media only screen and (max-width: 768px){
-
-    #menu_bar{
-        padding: 20px;
-        justify-content: space-between;
-
-    }
-
-    #nav_desktop{
-            display: none;
-        }
-
-
     
     #nome{
         display: none;
@@ -517,19 +508,6 @@ footer{
 }
 
 @media only screen and (min-width: 769px){
-
-    
-    #nav_mobile{
-        display: none;
-    }
-
-    #nav_desktop{
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: center;
-        width: 50%;
-    }
 
     .intro_buttons{
         justify-content: first baseline;
@@ -541,8 +519,8 @@ footer{
             letter-spacing: -15px;
         }
 
-        h2{
-            font-size: 40px;
+        #presentation{
+            font-size: 60px;
         }
     }
 

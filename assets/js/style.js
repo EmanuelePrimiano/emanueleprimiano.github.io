@@ -1,4 +1,8 @@
 // script.js
+(function() {
+  emailjs.init('F4D2ZLHTd_DgyAOWj');
+})();
+
 function SendMail() {
   var params = {
     from_name : document.getElementById("fullName").value,
@@ -21,6 +25,11 @@ function myFunction() {
   var x = document.getElementById("ab","ms","mw","so");
   if (x.style.display === "block") {
     x.style.display = "none";
-  } 
+  }
+
+
+ 
+
+  
 
 }

@@ -15,12 +15,16 @@ h1 {
   padding: 50px 0px 10px 0px;
 }
 
-h3 {
-  font-weight: 100;
+h2 {
+  font-size: 75px;
+  letter-spacing: -0.1em;
+  line-height: 94%;
+  padding: 50px 0px 10px 0px;
 }
 
 p {
   letter-spacing: -0.05em;
+  font-weight: 100;
 }
 
 section, footer {
@@ -41,51 +45,56 @@ section, footer {
 }
 
 .menu_bar {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #262626;
+  color: #f7ebec;
+  width: 100%;
+}
+.menu_bar #logo_menu {
   padding: 0px 50px 0px 50px;
   font-family: poppins, sans-serif;
   font-weight: 300;
-  width: 100%;
-  z-index: 1;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   height: 60px;
-  color: #f7ebec;
+  display: flex;
+  flex-direction: row;
 }
-.menu_bar .menu a {
+.menu_bar #logo_menu #menu_profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+.menu_bar #logo_menu #menu_profile img {
+  display: flex;
+  height: 30px;
+  border-radius: 50%;
+  border: solid #f7ebec 2px;
+  margin-right: 10px;
+}
+.menu_bar #logo_menu #menu_profile a {
+  display: flex;
   color: #f7ebec;
   text-decoration: none;
-  transition: 0.3s;
 }
-.menu_bar #nav_desktop a {
-  color: #f7ebec;
-  text-decoration: none;
-  padding: 5px;
-}
-.menu_bar #nav_desktop a:hover {
-  text-decoration: underline;
-}
-.menu_bar #nav_mobile {
-  height: 100%;
-}
-.menu_bar #nav_mobile #option {
+
+#option {
   font-family: poppins, sans-serif;
   background-color: #f7ebec;
   display: none;
-  position: absolute;
-  width: 200px;
-  height: 900px;
-  top: 50px;
-  right: 0;
-  z-index: 1;
-  transition: 0.5s;
-}
-.menu_bar #nav_mobile #option a {
+  position: relative;
   width: 100%;
-  border: solid #476F9A;
-  border-width: 0.5px 1px 0.5px 1px;
+}
+#option a {
+  width: 100%;
+  border: solid #262626;
+  border-width: 0.5px 0px 0.5px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,25 +103,27 @@ section, footer {
   color: #476F9A;
   font-size: 14px;
 }
-.menu_bar #nav_mobile #option a:hover {
+#option a:hover {
   background-color: #9DB6D0;
   color: #f7ebec;
 }
 
 #menu_progetti {
-  position: relative;
+  position: fixed;
   color: #262626;
   background-color: #f7ebec;
+  border-bottom: 0.5px #476F9A solid;
 }
-#menu_progetti .menu_1 a {
+#menu_progetti #logo_menu #menu_profile {
   color: #262626;
 }
-#menu_progetti a {
+#menu_progetti #logo_menu #menu_profile h3 {
   color: #262626;
   text-decoration: none;
 }
 
 #progetti_page2 {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -146,19 +157,6 @@ section, footer {
 }
 #progetti_page2 #prj_2 {
   border-right: 2px #476F9A solid;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.menu img {
-  display: flex;
-  height: 30px;
-  border-radius: 50%;
-  border: solid #f7ebec 2px;
-  margin-right: 10px;
 }
 
 .menu_1 {
@@ -209,7 +207,7 @@ section, footer {
 }
 
 #intro {
-  background-image: linear-gradient(to bottom, #262626 1%, #476F9A);
+  background-image: linear-gradient(to bottom, #262626 20%, #476F9A);
   color: #f7ebec;
   height: -moz-fit-content;
   height: fit-content;
@@ -220,7 +218,9 @@ section, footer {
   font-weight: 400;
   border-bottom: 2px #f7ebec solid;
 }
-#intro .contenuto h2 {
+#intro .contenuto #presentation {
+  border: none;
+  font-size: 30px;
   padding-top: 10px;
   font-family: italiana, sans-serif;
   letter-spacing: 0;
@@ -398,7 +398,7 @@ footer .contenuto #social .collegamento img {
   border-radius: 50%;
   border: 1px #f7ebec solid;
 }
-footer .contenuto #social .collegamento h2 {
+footer .contenuto #social .collegamento h3 {
   color: #f7ebec;
   font-weight: 100;
 }
@@ -417,28 +417,11 @@ footer .contenuto #social .collegamento h2 {
   }
 }
 @media only screen and (max-width: 768px) {
-  #menu_bar {
-    padding: 20px;
-    justify-content: space-between;
-  }
-  #nav_desktop {
-    display: none;
-  }
   #nome {
     display: none;
   }
 }
 @media only screen and (min-width: 769px) {
-  #nav_mobile {
-    display: none;
-  }
-  #nav_desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    width: 50%;
-  }
   .intro_buttons {
     justify-content: first baseline;
   }
@@ -446,8 +429,8 @@ footer .contenuto #social .collegamento h2 {
     font-size: 120px;
     letter-spacing: -15px;
   }
-  #intro h2 {
-    font-size: 40px;
+  #intro #presentation {
+    font-size: 60px;
   }
   #aboutme .contenuto {
     flex-direction: row;
