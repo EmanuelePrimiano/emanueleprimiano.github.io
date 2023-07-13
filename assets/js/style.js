@@ -1,9 +1,7 @@
 // script.js
-(function() {
-  emailjs.init('F4D2ZLHTd_DgyAOWj');
-})();
 
 function SendMail() {
+  emailjs.init('F4D2ZLHTd_DgyAOWj')
   var params = {
     from_name : document.getElementById("fullName").value,
     email_id : document.getElementById("email_id").value,
