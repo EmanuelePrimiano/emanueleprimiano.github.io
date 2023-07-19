@@ -1,0 +1,581 @@
+$primary-color: #476F9A;
+$secondary-color: #f7ebec;
+$tertiary-color: #262626;
+$quaternary-color: #9DB6D0;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $secondary-color;
+}
+
+h1{
+    font-size: 80px;
+    letter-spacing: -0.1em;
+    line-height: 94%;
+    padding: 50px 0px 10px 0px;
+}
+
+h2{
+    font-size: 75px;
+    letter-spacing: -0.1em;
+    line-height: 94%;
+    padding: 50px 0px 10px 0px;
+}
+
+p{
+    letter-spacing: -0.05em;
+    font-weight: 100;
+}
+
+section, footer{
+    font-family: poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenuto{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.menu_bar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    width: 100%;
+
+    #logo_menu{
+        padding: 0px 50px 0px 50px;
+        font-family: poppins, sans-serif;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        
+           
+        #menu_profile{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+
+
+            img{
+                display: flex;
+                height: 30px;
+                border-radius: 50%;
+                border: solid $secondary-color 2px;
+                margin-right: 10px;
+            }
+
+            a{
+                display: flex;
+                color: $secondary-color;
+                text-decoration: none;
+            }
+
+        
+        }
+
+    } 
+}
+
+#option{
+    font-family: poppins, sans-serif;
+    background-color: $secondary-color;
+    display: none;
+    position: relative;
+    width: 100%;
+            
+        a{
+            width: 100%;
+            border: solid $tertiary-color;
+            border-width: 0.5px 0px 0.5px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 14px;
+                   
+            &:hover{
+                background-color: $quaternary-color;
+                color: $secondary-color;
+                }       
+        }    
+}
+
+#menu_progetti{
+    position: fixed;
+    color: $tertiary-color;
+    background-color: $secondary-color;
+    border-bottom: 0.5px $primary-color solid;
+   
+
+
+    #logo_menu{
+        #menu_profile{
+           color: $tertiary-color;   
+        
+           h3{
+                color: $tertiary-color;
+                text-decoration: none;
+            }
+        }
+
+
+    }
+           
+}
+
+#progetti_page2{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+        h1{
+            display: flex;
+            padding: 10px;
+        }
+
+        .contenuto{
+            margin: 20px 0px 20px 0px;
+            display: flex;
+            align-items: start;
+
+                .descrizione{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 10px;
+
+                    div{
+                        .btn_2{
+                            margin: 10px 0px 0px 0px;
+                        }
+                    }
+                    }
+
+                    .img_prj{
+                        display: flex;
+                        width: 100%;
+                       
+                        img{
+                            width: 100%;
+                            border-radius: 5px;
+                        }  
+                }
+        }
+    
+    #prj_1, #prj_3{
+        border-left: 2px $primary-color solid;
+    }
+
+    #prj_2{
+        border-right: 2px $primary-color solid;
+    }
+
+}
+
+.menu_1{
+    display: flex;
+    margin: 5px 5px 5px 5px;
+    align-items: center;
+
+    img{
+        display: flex;
+        height: 30px;
+        border-radius: 50%;
+    }
+}
+
+.btn_1{
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    background-color: $primary-color;
+    color: $secondary-color;
+    height: 44px;
+    font-weight: 300;
+    margin: 20px 0px 20px 0px;
+    border: 2px $secondary-color solid;
+    padding: 8px 32px 8px 32px;
+    text-align: center;
+    border-radius: 5px;
+
+        &:hover{
+            color: $primary-color;
+            background-color: $secondary-color;
+        }
+}
+
+.btn_2{
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-weight: 300;
+    margin: 20px 0px 20px 0px;
+    border: 2px $primary-color solid;
+    padding: 8px 32px 8px 32px;
+    text-align: center;
+    border-radius: 5px;
+
+        &:hover{
+            color: $secondary-color;
+            background-color: $tertiary-color;
+            border-color: $tertiary-color;
+        }
+}
+
+#intro{
+    background-image: linear-gradient(to bottom, $tertiary-color 20%, $primary-color);
+    color: $secondary-color;
+    height: fit-content;
+    padding-top: 60px;
+
+    .contenuto{
+        h1{
+            text-align: center;
+            font-weight: 400;
+            border-bottom: 2px $secondary-color solid;
+        }
+
+        #presentation{
+            border: none;
+            font-size: 30px;
+            padding-top: 10px;
+            font-family: italiana, sans-serif;
+            letter-spacing: 0;
+            font-weight: 100;
+        }
+
+    }
+}
+
+#img_profile{ 
+    background-image: linear-gradient(to bottom, $primary-color 50%, $secondary-color 50%);
+    padding: 0px;
+
+    img{
+        border-radius: 50%;
+        width: 120px;
+        margin: 20px;
+        border: 4px $secondary-color solid;
+    }
+}
+
+#aboutme{
+    .contenuto{
+        display: flex;
+        flex-direction: column;
+        border-left: 2px $primary-color solid;
+
+        p{
+            padding: 10px 10px 10px 0px;
+        }
+
+        img{
+            background-color: $quaternary-color;
+            width: 225px;
+            height: 300px;
+            object-fit: cover;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+    }
+}
+
+#myskills{
+    padding: 10px;
+
+    .contenuto{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+        .skl{
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            text-transform: uppercase;
+            color: $tertiary-color;
+            margin: 20px;
+            
+            img{
+                border-radius: 50%;
+                border: 2px $primary-color solid;
+                width: 100px;
+            }
+        }
+    }
+}
+
+#myworks{
+    background-color: $secondary-color;
+    flex-direction: column;    
+    margin: 100px 0px 100px 0px;
+
+    .contenuto{
+        border-left: 2px $primary-color solid;
+        align-items: center;
+
+        div{
+            align-self: normal;
+
+            h1{
+                color: $tertiary-color;
+                padding-bottom: 50px;
+            }
+        }
+
+        #progetti{
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            display: flex;
+
+
+            .prj{
+                text-decoration: none;
+                background-color: $secondary-color;
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px $secondary-color solid;
+                border-radius: 5px;
+                padding: 20px;
+                color: $tertiary-color;
+                width: 240px;
+                height: 260px;
+                
+                h2,p{
+                    color: $tertiary-color;
+                }
+
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+
+                p{
+                    text-align: center;
+                    font-weight: 300;
+                    margin: 8px;
+                }
+            }
+        }
+    }
+}
+
+#myimages{
+    margin-top: 100px;
+    background-color: $primary-color;
+
+    .contenuto{
+        border: 2px $secondary-color solid;
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+
+        .image{
+            margin: 5px;
+            object-fit: cover;
+            width: 300px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    
+    .contenuto{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        #form{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+            border-bottom: 2px $primary-color solid;
+        
+            input, textarea, .btn_1{
+                height: 38px;
+                margin: 10px 0px 0px 0px;
+                font-size: 15px;
+                font-family: poppins, sans-serif;
+            }
+
+            .btn_1{
+                padding: 0px 18px 0px 18px;
+                font-weight: 100;
+            }
+        }
+
+
+        #social{
+            padding: 20px;
+
+            .collegamento{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-decoration: none;
+
+                img{
+                    width: 50px;
+                    margin: 5px;
+                    background-color: $secondary-color;
+                    border-radius: 50%;
+                    border: 1px $secondary-color solid;
+                }
+
+                h3{
+                    color: $secondary-color;
+                    font-weight: 100;
+                }
+            }
+        
+        }
+    }
+
+   
+}
+
+@media only screen and (min-width: 401px){
+
+    #progetti_page2{
+        .contenuto{   
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .descrizione{
+                    width: 90%;
+                }
+
+                .img_prj{
+                    width: 200px;
+                }
+            
+        }
+     
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    #nome{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 769px){
+
+    .intro_buttons{
+        justify-content: first baseline;
+    }
+
+    #intro{
+        h1{
+            font-size: 120px;
+            letter-spacing: -15px;
+        }
+
+        #presentation{
+            font-size: 60px;
+        }
+    }
+
+    #aboutme{
+        .contenuto{
+            flex-direction: row;
+            align-items: normal;  
+        }
+
+    }
+
+    #myworks{
+        .contenuto{
+            #progetti{
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    #progetti_page2{
+        .contenuto{  
+                margin-top: 100px; 
+                width: 90%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: start;
+
+                .descrizione{
+                    padding: 0;
+                    margin: 0;
+                    width: 65%;
+                }
+
+                .img_prj{
+                    width: 30%;
+                }
+            
+        }
+
+        #prj_2{
+            flex-direction: row-reverse;
+        }
+     
+    }
+
+    footer{
+        .contenuto{
+            flex-direction: row;
+
+            #form{
+                padding-right: 20px;
+                border-bottom: none;
+                border-right: 2px $primary-color solid;
+            }
+        }
+    }
+}
