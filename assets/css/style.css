@@ -433,6 +433,12 @@ footer .contenuto #social .collegamento h3 {
   }
 }
 @media only screen and (min-width: 769px) {
+  #nav_desktop {
+    display: flex;
+  }
+  #nav_desktop a {
+    display: flex;
+  }
   #nav_mobile {
     display: none;
   }
