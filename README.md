@@ -38,8 +38,5 @@ Si tratta della sezione dedicata esclusivamente alla descrizione e alla visualiz
 2. Grafica
 3. Discovery
 4. Wireframing
-<<<<<<< HEAD
 5. User Interface
-=======
 5. Prototyping
->>>>>>> e33aa5a3d1e234fdb834ad51ab599c5306506bd0
