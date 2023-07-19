@@ -33,7 +33,7 @@ Questa è la home page e mi descrivo tramite le varie sezioni:
 
 <h2><a href="https://emanueleprimiano.github.io/progetti.html">PROGETTI</a></h2>
 
-Si tratta della sezione dedicata esclusivamente alla descrizione e alla visualizzazione dei progetti.
+Si tratta della sezione dedicata esclusivamente alla descrizione e alla visualizzazione dei progetti:
 1. Articolo per blog
 2. Grafica
 3. Discovery
