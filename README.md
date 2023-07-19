@@ -39,4 +39,3 @@ Si tratta della sezione dedicata esclusivamente alla descrizione e alla visualiz
 3. Discovery
 4. Wireframing
 5. User Interface
-5. Prototyping
