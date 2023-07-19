@@ -95,19 +95,6 @@ section, footer{
         
         }
 
-        #nav_desktop{
-                a{
-                    color: $secondary-color;
-                    text-decoration: none;
-                    padding: 5px;
-
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-                
-            }
-
     } 
 }
 
@@ -155,11 +142,6 @@ section, footer{
             }
         }
 
-        #nav_desktop{
-            a{
-                color: $tertiary-color;
-            }
-        }
 
     }
            
@@ -370,9 +352,9 @@ section, footer{
         #progetti{
             align-items: center;
             justify-content: center;
-            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
             display: flex;
-            flex-direction: column;
 
 
             .prj{
@@ -518,24 +500,13 @@ footer{
 
 @media only screen and (max-width: 768px){
     
-    
-    #nome, #nav_desktop{
+    #nome{
         display: none;
     }
 
 }
 
 @media only screen and (min-width: 769px){
-    #nav_desktop{
-        display: flex;
-        a{
-            display: flex;
-        }
-    }
-
-    #nav_mobile{
-        display: none;
-    }
 
     .intro_buttons{
         justify-content: first baseline;
@@ -563,9 +534,9 @@ footer{
     #myworks{
         .contenuto{
             #progetti{
+                justify-content: center;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-around;
             }
         }
     }

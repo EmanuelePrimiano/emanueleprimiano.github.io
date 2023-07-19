@@ -83,14 +83,6 @@ section, footer {
   color: #f7ebec;
   text-decoration: none;
 }
-.menu_bar #logo_menu #nav_desktop a {
-  color: #f7ebec;
-  text-decoration: none;
-  padding: 5px;
-}
-.menu_bar #logo_menu #nav_desktop a:hover {
-  text-decoration: underline;
-}
 
 #option {
   font-family: poppins, sans-serif;
@@ -128,9 +120,6 @@ section, footer {
 #menu_progetti #logo_menu #menu_profile h3 {
   color: #262626;
   text-decoration: none;
-}
-#menu_progetti #logo_menu #nav_desktop a {
-  color: #262626;
 }
 
 #progetti_page2 {
@@ -310,9 +299,9 @@ section, footer {
 #myworks .contenuto #progetti {
   align-items: center;
   justify-content: center;
-  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
 }
 #myworks .contenuto #progetti .prj {
   text-decoration: none;
@@ -428,20 +417,11 @@ footer .contenuto #social .collegamento h3 {
   }
 }
 @media only screen and (max-width: 768px) {
-  #nome, #nav_desktop {
+  #nome {
     display: none;
   }
 }
 @media only screen and (min-width: 769px) {
-  #nav_desktop {
-    display: flex;
-  }
-  #nav_desktop a {
-    display: flex;
-  }
-  #nav_mobile {
-    display: none;
-  }
   .intro_buttons {
     justify-content: first baseline;
   }
@@ -457,9 +437,9 @@ footer .contenuto #social .collegamento h3 {
     align-items: normal;
   }
   #myworks .contenuto #progetti {
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
   #progetti_page2 .contenuto {
     margin-top: 100px;
