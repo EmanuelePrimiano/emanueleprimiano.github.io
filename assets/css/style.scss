@@ -91,8 +91,22 @@ section, footer{
                 color: $secondary-color;
                 text-decoration: none;
             }
+
         
         }
+
+        #nav_desktop{
+                a{
+                    color: $secondary-color;
+                    text-decoration: none;
+                    padding: 5px;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
 
     } 
 }
@@ -123,7 +137,6 @@ section, footer{
         }    
 }
 
-
 #menu_progetti{
     position: fixed;
     color: $tertiary-color;
@@ -134,12 +147,17 @@ section, footer{
 
     #logo_menu{
         #menu_profile{
-            
            color: $tertiary-color;   
         
            h3{
                 color: $tertiary-color;
                 text-decoration: none;
+            }
+        }
+
+        #nav_desktop{
+            a{
+                color: $tertiary-color;
             }
         }
 
@@ -194,7 +212,6 @@ section, footer{
     }
 
 }
-
 
 .menu_1{
     display: flex;
@@ -499,15 +516,17 @@ footer{
     }
 }
 
-@media only screen and (max-width: 768px){
-    
-    #nome{
+@media only screen and (max-width: 768px){    
+    #nome, #nav_desktop{
         display: none;
     }
 
 }
 
 @media only screen and (min-width: 769px){
+    #nav_mobile{
+        display: none;
+    }
 
     .intro_buttons{
         justify-content: first baseline;
