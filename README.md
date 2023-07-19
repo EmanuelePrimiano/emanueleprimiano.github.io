@@ -11,10 +11,10 @@ Nella <b>repository</b> si possono trovare tutti i file inerenti al progetto:
 - LICENCE
 - README.md
 
-Nella stessa si trova la cartella <b>assets</b> in cui sono stati inseriti i file suddivisi in ulteriori cartelle in base alle loro caratteristiche:
-- css
-- js
-- img
+Nella stessa si trova la cartella <b>assets</b> in cui sono stati inseriti i file suddivisi in ulteriori cartelle in base alle loro caratteristiche ed uso all'interno del portfolio:
+- css (per lo stile);
+- js (per funzionalità come menu e form di per contattarmi);
+- img (le immagini);
 
 //
 
@@ -23,7 +23,7 @@ Il lavoro è diviso in due pagine: <b>HOME</b> e <b>PROGETTI</b>.
 <h2><a href="https://emanueleprimiano.github.io/portfolio.html">HOME</a></h2>
 
 
-Questa è la home page e mi descrivo tramite le varie sezioni:
+Questa è la home page in cui descrivo chi sono tramite le seguenti sezioni:
  1. Presentazione
  2. Bio
  3. Skills
@@ -33,9 +33,9 @@ Questa è la home page e mi descrivo tramite le varie sezioni:
 
 <h2><a href="https://emanueleprimiano.github.io/progetti.html">PROGETTI</a></h2>
 
-Si tratta della sezione dedicata esclusivamente alla descrizione e alla visualizzazione dei progetti.
+Si tratta della sezione dedicata esclusivamente alla descrizione e alla visualizzazione dei progetti:
 1. Articolo per blog
 2. Grafica
 3. Discovery
 4. Wireframing
-5. Prototyping
+5. User Interface
